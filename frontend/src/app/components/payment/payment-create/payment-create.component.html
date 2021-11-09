@@ -1,0 +1,34 @@
+<form [formGroup]="form" class="form-builder">
+
+
+        <mat-form-field appearance="outline">
+                <mat-label>Nome do Cartão</mat-label>
+                <input matInput  formControlName="nome" placeholder="JULIETA SANTOS">
+                <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+                <mat-label>Número do cartão</mat-label>
+                <input matInput  formControlName="numero" placeholder="1111 1111 1111 1111">
+                <mat-icon matSuffix>credit_card</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+                <mat-label>Validade do cartão </mat-label>
+                <input matInput  formControlName="validade" placeholder="12/28">
+                <mat-icon matSuffix>date_range</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+                <mat-label>Código do cartão </mat-label>
+                <input matInput  formControlName="codigo" placeholder="000">
+                <mat-icon matSuffix>visibility</mat-icon>
+        </mat-form-field>
+
+        <div class="btn">
+                <button mat-raised-button (click)="createCard()" >
+                    Cadastrar novo produto
+                </button>
+            </div>
+
+</form>

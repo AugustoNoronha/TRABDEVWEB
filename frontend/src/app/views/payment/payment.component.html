@@ -1,0 +1,27 @@
+
+    <div class="btn">
+        <button mat-raised-button (click)="navProdCreate()"  class="newProduct">
+            Novo Produto
+        </button>
+    </div>
+
+<div class="card">
+    <mat-card *ngFor="let card of cards" class="mat-card">
+        <mat-card-title>{{card.nome}}</mat-card-title>
+        <mat-label class="num">Número</mat-label>
+        <mat-card-subtitle>{{card.numero}}</mat-card-subtitle>
+        <mat-label>Validade</mat-label>
+        <mat-card-subtitle>{{card.validade}}</mat-card-subtitle>
+     
+        <div class="alinha">
+            <div class="codigo">
+                <mat-label>Código</mat-label>
+                <mat-card-subtitle>{{card.codigo}}</mat-card-subtitle>
+            </div>
+            
+            <button mat-raised-button (click)="deleteCard(card.id)" >
+                <mat-icon class="delete">delete</mat-icon>
+            </button>
+        </div>
+    </mat-card>
+</div>

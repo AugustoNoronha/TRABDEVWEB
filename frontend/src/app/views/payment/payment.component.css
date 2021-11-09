@@ -1,0 +1,53 @@
+.card{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.mat-card{
+    width: 40%;
+    height: 165px;
+    background-color: aliceblue;
+    margin: 24px;
+}
+
+
+
+mat-label{
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: medium;
+    color: rgba(128, 128, 128, 0.616);
+}
+
+mat-card-subtitle{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.btn{
+    display: flex;
+    justify-content: start;
+    margin-left: 40px;
+}
+
+.newProduct{
+    background-color: rgb(242,115,0);
+    color: white;
+}
+
+.alinha{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.delete{
+    color: rgba(189, 25, 25, 0.815);
+}
+
+
+

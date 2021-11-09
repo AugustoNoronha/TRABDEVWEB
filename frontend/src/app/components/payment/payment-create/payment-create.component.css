@@ -1,0 +1,20 @@
+.form-builder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-form-field{
+    width: 50%;
+}
+
+.btn{
+    width: 50%;
+}
+
+button{
+    width: 100%;
+    color: white;
+    background-color: rgb(242,115,0);
+}
