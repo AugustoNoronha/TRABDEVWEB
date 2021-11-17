@@ -11,7 +11,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "payments",
+    path: "home",
     component: PaymentComponent,
   },
   {

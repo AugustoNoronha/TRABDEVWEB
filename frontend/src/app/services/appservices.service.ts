@@ -10,16 +10,16 @@ export class AppservicesService {
   constructor(private http: HttpClient) { }
 
   getCards(){
-    return this.http.get<any>(`${environment.baseURL}cartoes`)
+    return this.http.get<any>(`${environment.baseURL}produtosEpa`)
 
   }
 
-  createCards(nome:String , numero:String, validade:String, codigo:String){
-    return this.http.post<any>(`${environment.baseURL}cartoes`,{nome: nome, numero:numero, validade:validade, codigo:codigo})
+  createCards(nome:String , preco:String, img:String){
+    return this.http.post<any>(`${environment.baseURL}produtosEpa`,{nome: nome, preco:preco, img:img})
   }
 
   deleteCard(id:Number){
-    return this.http.delete<any>(`${environment.baseURL}cartoes/${id}`)
+    return this.http.delete<any>(`${environment.baseURL}produtosEpa/${id}`)
   
   }
 }

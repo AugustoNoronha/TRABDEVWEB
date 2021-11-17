@@ -7,10 +7,17 @@
 }
 
 .mat-card{
-    width: 40%;
-    height: 165px;
-    background-color: aliceblue;
+    width: 15%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
     margin: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 8px 10px 19px -2px rgba(0,0,0,0.51);
 }
 
 
@@ -35,7 +42,7 @@ mat-card-subtitle{
 }
 
 .newProduct{
-    background-color: rgb(242,115,0);
+    background-color: rgb(228, 29, 29);
     color: white;
 }
 
@@ -47,6 +54,11 @@ mat-card-subtitle{
 
 .delete{
     color: rgba(189, 25, 25, 0.815);
+}
+
+.img{
+    height: 140px;
+    width: 160px;
 }
 
 

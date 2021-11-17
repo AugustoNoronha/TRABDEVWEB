@@ -23,6 +23,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
+import { LOCALE_ID } from '@angular/core';
 
 
 @NgModule({
@@ -53,7 +54,7 @@ import { PaymentCreateComponent } from "./components/payment/payment-create/paym
     
 
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -1,7 +1,8 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: rgb(242,115,0);
+  background-color: rgb(228, 29, 29);
+  height: auto;
 }
 
 .material-icons{
@@ -18,8 +19,9 @@ a{
   text-decoration: none;
 }
 
-.header .logo {
-  max-height: 30px;
+.logo {
+  margin: 20px;
+  height: 80px;
 }
 
 .header .title-group {

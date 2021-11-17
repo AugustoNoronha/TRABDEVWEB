@@ -1,17 +1,15 @@
 {
-  "cartoes": [
+  "produtosEpa": [
     {
-      "nome": "Angélica Huck",
-      "numero": "3232 4345 4343 4543",
-      "validade": "04/25",
-      "codigo": "332",
+      "nome": "Salsicha",
+      "preco": "10,00",
+      "img": "https://io2.convertiez.com.br/m/superpaguemenos/shop/products/images/17167/medium/salsicha-sadia-kg_86986.png",
       "id": 3
     },
     {
-      "nome": "Augusto Noronha",
-      "numero": "4444 4444 4444 4444",
-      "validade": "12/28",
-      "codigo": "098",
+      "nome": "Pernil",
+      "preco": "100,00",
+      "img": "https://www.sadia.com.br/sites/default/files/pernil-desossado-card_0.jpg",
       "id": 4
     }
   ]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {  Router } from '@angular/router';
 import { AppservicesService } from 'src/app/services/appservices.service';
 
 
@@ -14,7 +15,8 @@ export class PaymentCreateComponent implements OnInit {
   postId = null;
 
   constructor(private fb: FormBuilder,
-              private _serviceses: AppservicesService
+              private _serviceses: AppservicesService,
+              private route: Router,
               ) { }
 
   ngOnInit(): void {
@@ -24,22 +26,24 @@ export class PaymentCreateComponent implements OnInit {
   initForm(){
     this.form = this.fb.group({
       nome: ['', Validators.required], 
-      numero: ['', Validators.required],
-      validade:['', Validators.required],
-      codigo: ['', Validators.required],
+      preco: ['', Validators.required],
+      img:['', Validators.required],
       })
     }
 
     createCard(){
       if(this.form.valid){
         const nome = this.form.get("nome")?.value
-        const numero = this.form.get("numero")?.value
-        const validade = this.form.get("validade")?.value
-        const codigo  = this.form.get("codigo")?.value
+        const preco = this.form.get("preco")?.value
+        const img = this.form.get("img")?.value
        
-        this._serviceses.createCards(nome, numero, validade, codigo).subscribe({
+       
+        this._serviceses.createCards(nome, preco, img).subscribe({
           next: data => {
             this.postId = data.id
+            if(data != null){
+              this.route.navigate(['/home'])
+            }
           }
         })
       }else{
